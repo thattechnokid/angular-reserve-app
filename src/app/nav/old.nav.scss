@@ -1,0 +1,27 @@
+div#nav{
+  height: 75px;
+  width: 100%;
+  background-color: #474747;
+  color: white;
+  ul#navList{
+    position: relative;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+     li#navItem {
+       display: inline;
+       margin-right: 20px;
+       list-style-type: none;
+       font-size: 18px;
+       text-align: center;
+       img{
+         width: 50px;
+       }
+       a{
+         text-decoration: none;
+         color: white;
+       }
+     }
+  }
+}
+

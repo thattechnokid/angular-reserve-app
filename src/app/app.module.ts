@@ -15,6 +15,7 @@ import { ContactComponent } from './contact/contact.component';
 import { AboutComponent } from './about/about.component';
 import { RoomsComponent } from './rooms/rooms.component';
 import { RoomService } from './services/room.service';
+import { LogoutComponent } from './logout/logout.component';
 
 const routes: Route[] = [
     {
@@ -50,7 +51,8 @@ const routes: Route[] = [
         PageNotFoundComponent,
         ContactComponent,
         AboutComponent,
-        RoomsComponent
+        RoomsComponent,
+        LogoutComponent
         
         //Telling angular about the component
     ],

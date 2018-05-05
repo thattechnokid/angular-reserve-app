@@ -1,0 +1,15 @@
+<div id="nav">
+  <ul id="navList">
+
+    <li id="navItem" style="margin-right:70px">Reserve A Room</li>
+
+    <!-- To make the menu items have a candy-cane color effect, use this: li *ngFor="let navItem of navItems; even as e" id="navItem" [ngClass]="{'red': e}"></li> -->
+
+    <li *ngFor="let navItem of navArray" id="navItem">
+      <a [routerLink]="[navItem.url]">{{ navItem.label }}</a>
+
+    </li>
+
+  </ul>
+
+</div>
