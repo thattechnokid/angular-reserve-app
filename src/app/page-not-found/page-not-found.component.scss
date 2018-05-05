@@ -1,0 +1,34 @@
+.error-container{
+    height:100vh;
+    width: 100%;
+    background-color: royalblue;
+
+    position: absolute;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    top:50%;
+    left:50%;
+
+    span{
+       position: absolute;
+       transform: translate(-50%, -50%);
+       top:50%;
+       left:50%;
+       color: white;
+       &:first-child{
+           h1{
+            font-size: 100px;
+
+           }
+       }
+       &:nth-child(2){
+            margin-top: 100px;
+            p{
+                a{
+                    color: white;
+                    text-decoration: underline;
+                }
+            }
+       }
+    }
+}
