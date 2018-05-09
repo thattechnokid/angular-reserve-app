@@ -22,7 +22,7 @@ export class RoomsComponent implements OnInit {
   public ngOnInit() {
     this.route.paramMap.subscribe(paramMap => {
       this.databaseID = paramMap.get("databaseID");
-      //I think this just makes it possible for angular to get access to the URL "map" and so stuff with it????????????
+      //I think this just makes it possible for angular to get access to the URL "map" and do stuff with it????????????
       
     
     });

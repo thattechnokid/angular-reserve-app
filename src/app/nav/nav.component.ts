@@ -2,6 +2,7 @@ import { IRoom } from './../interfaces/IRoom';
 import { RoomService } from './../services/room.service';
 import { Component,OnInit } from '@angular/core';
 import { INavigationItem } from "./../interfaces/INavigationItem";
+import { Router } from '@angular/router';
 
 @Component({
     selector: "gw-nav",
@@ -12,10 +13,12 @@ import { INavigationItem } from "./../interfaces/INavigationItem";
 })
 export class NavComponent implements OnInit{
    
-    public navArray: INavigationItem[];
+    public navArray: INavigationItem[]; //Injecting services/interfaces
     public rooms: IRoom[];
+    public router: Router;
 
-    constructor(private roomService: RoomService) {
+    constructor(private roomService: RoomService
+    ) {
     
     } //injects the RoomService "Service" into this nav component | Gives you access to RoomService and all of its goodies
 

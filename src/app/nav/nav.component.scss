@@ -3,5 +3,10 @@ div.ui.secondary.menu{
   background-color: royalblue;
   .item{
     color: white;
+    &.activeItem {
+        background-color: gray;
+        color: white;
+      }
+
   }
 }

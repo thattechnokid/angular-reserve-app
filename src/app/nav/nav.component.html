@@ -4,13 +4,13 @@
     <div class="header item">
         Reserve a Room
     </div>
-    <a class="item" *ngFor="let navItem of navArray" [routerLink]="[navItem.url]">
+    <a class="item" *ngFor="let navItem of navArray" [routerLink]="[navItem.url]" routerLinkActive="activeItem">
         {{ navItem.label }}
     </a>
   
   <!-- Right Side of menu \/ -->
     <div class="right menu">
-      <gw-login class="ui item"></gw-login>
-      <gw-logout class="ui item"></gw-logout>
+      <gw-login class="item"></gw-login>
+      <gw-logout class="item"></gw-logout>
     </div> 
 </div>
