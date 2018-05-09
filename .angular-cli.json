@@ -20,7 +20,8 @@
       "prefix": "gw",
       "styles": [
         "styles.scss",
-        "./../semantic/dist/semantic.min.css"
+        "./../semantic/dist/semantic.min.css",
+        "./../node_modules/font-awesome/css/font-awesome.min.css"
       ],
       "scripts": ["./../semantic/dist/semantic.min.js"],
       "environmentSource": "environments/environment.ts",
