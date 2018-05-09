@@ -9,19 +9,19 @@ export class RoomService {
 
   constructor() { 
     this.rooms = [{
-      databaseID: "1",
+      databaseID: "Halo",
       roomName:"Halo",
       roomPhoto: "halo.jpg"
     }, {
-        databaseID: "2",
+        databaseID: "Starfox",
         roomName: "Starfox",
         roomPhoto: "starfox.jpg"
       }, {
-        databaseID: "3",
+        databaseID: "Zelda",
         roomName: "Zelda",
         roomPhoto: "zelda.jpg"
       }, {
-        databaseID: "4",
+        databaseID: "Donkey Kong",
         roomName: "Donkey Kong",
         roomPhoto: "donkey-kong.jpg"
       },]
