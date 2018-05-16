@@ -1,4 +1,7 @@
+import { AngularFireAuth } from 'angularfire2/auth';
+import { ActivatedRoute } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
+import * as firebase from "firebase";
 
 @Component({
   selector: 'gw-welcome',
@@ -7,9 +10,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class WelcomeComponent implements OnInit {
 
-  constructor() { }
+  constructor(private _activatedRoute: ActivatedRoute, private _auth: AngularFireAuth) { }
 
   ngOnInit() {
+    this._auth.auth.signInWithPopup(new firebase.auth.GoogleAuthProvider());
   }
 
 }

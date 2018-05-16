@@ -1,3 +1,4 @@
+import { environment } from './../environments/environment';
 import { NavComponent } from './nav/nav.component';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -7,6 +8,18 @@ import { AppComponent } from "./app.component";
 
 import { AppRoutingModule, routedComponents } from "./app.routing.module"; 
 import { RoomsModule } from "./rooms/room.module";
+
+//Angular/Firebase crap \/
+import { AngularFireAuth } from 'angularfire2/auth';
+
+import { AngularFireDatabaseModule } from 'angularfire2/database';
+
+import { AngularFireAuthModule } from 'angularfire2/auth';
+
+import { AngularFireModule } from 'angularfire2';
+
+
+
 //Importing the separate modules into the main one
 
 
@@ -20,11 +33,14 @@ import { RoomsModule } from "./rooms/room.module";
     imports:[
         BrowserModule,
         RoomsModule,
+        AngularFireModule.initializeApp(environment.firebase),
+        AngularFireAuthModule,
+        AngularFireDatabaseModule,
         AppRoutingModule //This is always last i guess
         
     ],
     providers:[
-
+        AngularFireAuth
     ],
     bootstrap:[
       AppComponent //This is choosing the component that boots when you fire up angular

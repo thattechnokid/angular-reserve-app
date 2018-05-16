@@ -1,14 +1,16 @@
+import { Observable } from 'rxjs/Observable';
 import { Injectable } from '@angular/core';
 import { IRoom } from '../interfaces/IRoom';
+import { of } from "rxjs/observable/of";
 
 @Injectable()
 export class RoomService {
 
-  public rooms: IRoom[];
+  public rooms: Observable<IRoom[]>;
 
 
   constructor() { 
-    this.rooms = [{
+    this.rooms = of([{
       databaseID: "Halo",
       roomName:"Halo",
       roomPhoto: "halo.jpg"
@@ -24,7 +26,14 @@ export class RoomService {
         databaseID: "Donkey Kong",
         roomName: "Donkey Kong",
         roomPhoto: "donkey-kong.jpg"
-      },]
+      },])
   }
-
+  writeRoomReservation(){
+    console.log("Reserve");
+    
+  }
+  deleteRoomReservation(){
+    console.log("Delete");
+    
+  }
 }
